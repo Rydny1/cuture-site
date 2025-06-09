@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <!-- Dark mode class toggled here -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUTURE - Urban Streetwear</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="graffiti-spinner"></div>
+      <div class="preloader-text">CUTURE...</div>
+    </div>
+
+    <header id="mainHeader" class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo pagelink">CUTURE</a>
+          <nav class="nav-desktop">
+            <div class="search-bar-container">
+              <input
+                type="text"
+                id="searchInputDesktop"
+                placeholder="Search products..."
+                class="search-bar-custom" />
+              <span class="search-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </span>
+            </div>
+            <div class="currency-select-container">
+              <select id="currencySwitcherDesktop" class="currency-select">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="NGN">NGN</option>
+              </select>
+              <div class="currency-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </div>
+            </div>
+            <button id="themeToggle" class="icon-btn theme-icon">
+              <svg
+                id="themeIconMoon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+              </svg>
+              <svg
+                id="themeIconSun"
+                class="hidden"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </button>
+            <a href="login.html" class="icon-btn pagelink">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </a>
+            <button id="cartIcon" class="icon-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span id="cartItemCount" class="cart-item-count">0</span>
+            </button>
+          </nav>
+          <div class="nav-mobile-btn-group">
+            <div class="currency-select-container">
+              <select id="currencySwitcherMobile" class="currency-select">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="NGN">NGN</option>
+              </select>
+              <div class="currency-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </div>
+            </div>
+            <button id="cartIconMobile" class="icon-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span id="cartItemCountMobile" class="cart-item-count">0</span>
+            </button>
+            <button id="mobileMenuButton" class="icon-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobileMenu" class="hidden">
+        <div class="mobile-menu-content">
+          <div class="search-bar-container">
+            <input
+              type="text"
+              id="searchInputMobile"
+              placeholder="Search products..."
+              class="search-bar-custom" />
+            <span class="search-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </span>
+          </div>
+          <button id="themeToggleMobile" class="mobile-menu-link icon-btn theme-icon">
+            <svg
+              id="themeIconMoonMobile"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg
+              id="themeIconSunMobile"
+              class="hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <span id="themeToggleTextMobile">Toggle Mode</span>
+          </button>
+          <a href="login.html" class="mobile-menu-link icon-btn pagelink">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+            </svg>
+            Login
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-text-bg" aria-hidden="true">CUTURE IS THE FUTURE</div>
+      <div class="hero-text-bg variant2" aria-hidden="true">CUTURE IS THE FUTURE</div>
+      <div class="hero-content">
+        <h1 class="hero-title reveal">
+          <span class="highlight-yellow">Cuture</span> is the
+          <span class="highlight-pink">Future</span>
+        </h1>
+        <p class="slogan reveal">
+          Unleash your inner rebel. Cop the freshest drops from the underground.
+        </p>
+        <a href="#productGrid" class="hero-cta btn btn-primary reveal">Shop Collection</a>
+      </div>
+    </section>
+
+    <main id="productGrid" class="product-grid-section container">
+      <h2 class="section-title reveal">Our Dopest Gear</h2>
+      <div id="productContainer" class="product-container">
+        <!-- Product cards are rendered here by JS -->
+      </div>
+    </main>
+
+    <div id="cartSidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h3 class="cart-title">Your Cart</h3>
+        <button id="closeCartButton" class="close-cart-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div id="cartItemsContainer" class="cart-items-container">
+        <p id="emptyCartMessage" class="">
+          Your cart is feeling a bit lonely. Add some awesome gear!
+        </p>
+        <!-- Cart items are rendered here by JS -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span class="cart-subtotal-label">Subtotal:</span>
+          <span id="cartTotal" class="cart-subtotal-value">$0.00</span>
+        </div>
+        <button class="btn btn-primary checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+    <div id="cartOverlay" class="cart-overlay hidden"></div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-email-signup reveal">
+            <h3 class="footer-title text-white">Stay Updated</h3>
+            <p class="footer-text">Get the latest drops, news, and deals straight to your inbox.</p>
+            <form action="#" method="POST" class="email-form">
+              <label for="footer-email" class="sr-only">Email address</label>
+              <input
+                type="email"
+                name="footer-email"
+                id="footer-email"
+                autocomplete="email"
+                required
+                class="input-email"
+                placeholder="Enter your email" />
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+          </div>
+          <div class="footer-brand-socials reveal">
+            <h2 class="footer-brand-name text-white">CUTURE</h2>
+            <div class="social-links">
+              <a
+                href="#"
+                class="footer-social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="footer-social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="footer-social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="footer-social-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
+            <p class="copyright-text">
+              &copy; <span id="currentYear"></span> CUTURE. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
